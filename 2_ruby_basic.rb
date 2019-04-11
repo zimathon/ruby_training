@@ -15,3 +15,10 @@ p n += 1
 # p 1 + '10' => error
 p 1 + '10'.to_i
 p 1 + '10.5'.to_f
+
+# nil, false が偽
+if data
+  'data exist'    
+else
+  'data nothin'    
+end
