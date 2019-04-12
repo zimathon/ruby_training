@@ -17,8 +17,36 @@ p 1 + '10'.to_i
 p 1 + '10.5'.to_f
 
 # nil, false が偽
+data = nil
 if data
   'data exist'    
 else
   'data nothin'    
 end
+
+
+# メソッドの戻り値に return は使わない
+# return はメソッドから抜けるときにのみ使う
+
+def greeting(coutry)
+
+  return 'input country' if country.nil?
+
+  if country == 'japan'
+    'こんにちわ'
+  else
+    'hello'
+  end
+end
+
+# hear document
+text = <<TEXT
+ヒアドキュメントの検証
+１
+２
+３
+４
+５
+TEXT
+
+p text
